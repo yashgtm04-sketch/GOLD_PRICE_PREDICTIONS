@@ -1,0 +1,49 @@
+Gold Price Prediction Using Machine Learning
+Project Overview
+
+ This project predicts gold prices (GLD) using historical financial data and machine learning.
+ It studies how silver prices (SLV), crude oil prices (USO), and stock market trends (SPX) influence gold prices.
+
+Dataset
+
+ Records: 2,290
+ Type: Financial market data
+ Target Variable: Gold Price (GLD)
+
+ Key Features:
+• SLV – Silver Price
+• USO – Crude Oil Price Proxy
+• SPX – S&P 500 Index
+Exploratory Data Analysis (EDA)
+ Histograms to analyze feature distributions
+ Correlation heatmap to study relationships
+ Scatter plots (Gold vs Silver, Gold vs USO) to explore patterns
+ Boxplots to detect extreme values
+
+ Key Insights:
+• Strong positive relationship between gold and silver prices
+• Weak, non-linear relationship between gold and crude oil prices
+• Outliers present, requiring preprocessing
+Data Preprocessing
+
+ Outlier detection using the IQR method
+ Outlier treatment through capping to control extreme values
+ Feature scaling applied where required
+ Machine Learning Models
+
+ Logistic Regression – baseline linear model
+ Random Forest Regressor – non-linear tree-based model
+
+ Results & Findings
+
+ Random Forest achieved strong predictive performance (R² ≈ 0.99)
+ Predicted vs actual plots showed stable and consistent predictions
+ Tree-based models captured non-linear relationships better than linear models
+
+ Tools Used
+
+ Python
+ Pandas, NumPy
+ Matplotlib, Seaborn
+ Scikit-learn
+ Jupyter Notebook
